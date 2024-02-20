@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('re.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column; /* Change to column direction to center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.container {
+    margin-top: 40px; /* Adjust the top margin as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color transparency */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(1px); /* Adjust the blur intensity as needed */
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title h1 {
+    color: black;
+    font-size: 36px; /* Adjust the size as needed */
+    font-family: 'Your Cool Font', sans-serif; /* Replace 'Your Cool Font' with your preferred cool font */
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    font-size: 18px; /* Adjust the size as needed */
+    margin-bottom: 20px;
+}
+
+.title hr {
+    border: 1px solid #333;
+    width: 50%;
+    margin: 10px auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 200px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid black;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: lightgray;
+    color: darkslategrey;
+}
+
+/* Add this style for the logout button in the navigation */
+.navigation .btn {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 7px 10px;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 20px; /* Adjust as needed */
+    transition: 0.5s;
+}
+
+.navigation .btn:hover {
+    background: lightgray; /* Add your preferred hover background color */
+    color: darkslategrey; /* Add your preferred hover text color */
+}
+
+.logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the style for the small image in h2 */
+header h2 img {
+    width: 50px; /* Adjust the width as needed */
+    height: 70px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it a circle */
+}
+

@@ -12,13 +12,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sheet/home.css">
     <title>Change Profile</title>
 </head>
 <body>
     <div class="nav">
         <div class="logo">
-            <p><a href="home.php"> Logo</a></p>
+            <p><a href="home.php"> DailyDraft</a></p>
         </div>
 
         <div class="right-links">
@@ -26,6 +26,7 @@
             <a href="php/logout.php"> <button class="btn">Log Out</button> </a>
         </div>
     </div>
+    
     <div class="container">
         <div class="box form-box">
             <?php 

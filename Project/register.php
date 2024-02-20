@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sheet/style.css">
     <title>Register</title>
 </head>
 <body>
-     <div class="container">
-       <div class="box form-box">
+<header>
+        <h2 class="logo">DailyDraft</h2>
+        <nav class="navigation">
+        <a href="main.php">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="index.php" class="btnLogin-popup nav-link">Login</a>
+        </nav>
+</header>
+      <div class="container">
+        <div class="box form-box">
 
-       <?php 
+        <?php 
+         
          include("php/config.php");
          if(isset($_POST['submit'])){
             $username = $_POST['username'];
@@ -44,39 +56,37 @@
          
         ?>
 
-          <header>Sign up</header>  
-          <form action="" method="post">
-            
-            <div class="field input">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" autocomplete="off" required>
-            </div>
+            <h2>Sign Up</h2>
+            <form action="" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required>
+                </div>
 
-            <div class="field input">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" autocomplete="off" required>
-            </div>
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" autocomplete="off" required>
+                </div>
 
-            <div class="field input">
-                <label for="age">Age</label>
-                <input type="number" name="age" id="age" autocomplete="off" required>
-            </div>
+                <div class="field input">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" autocomplete="off" required>
+                </div>
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
 
-            <div class="field input">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" autocomplete="off" required>
-            </div>
-
-            <div class="field">
-
-                <input type="submit" class="btn" name="submit" value="Register" required>
-            </div>
-            <div class="links">
-                Already have an account? <a href="index.php">Click here</a>
-            </div>
-          </form>      
-       </div>
-       <?php } ?>
-     </div>
+                <div class="field">
+                    
+                    <input type="submit" class="btn" name="submit" value="Register" required>
+                </div>
+                <div class="links">
+                    Already a member? <a href="index.php">Sign In</a>
+                </div>
+            </form>
+        </div>
+        <?php } ?>
+      </div>
 </body>
 </html>
